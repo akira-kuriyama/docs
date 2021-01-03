@@ -224,7 +224,7 @@ on:
 
 #### `delete`
 
-誰かがブランチまたはタグを作成し、それによって `create` イベントがトリガーされるときにワークフローを実行します。 REST API の詳細については、「[リファレンスの削除](/rest/reference/git#delete-a-reference)」を参照してください。
+誰かがブランチまたはタグを削除し、それによって `delete` イベントがトリガーされるときにワークフローを実行します。 REST API の詳細については、「[リファレンスの削除](/rest/reference/git#delete-a-reference)」を参照してください。
 
 {% data reusables.github-actions.branch-requirement %}
 
@@ -241,7 +241,7 @@ on:
 
 #### `deployment`
 
-誰かがデプロイメントを作成し、それによって `deploymen` イベントがトリガーされるときにワークフローを実行します。 コミット SHA 付きで作成されたデプロイメントには Git ref がない場合があります。 REST API の詳細については、「[デプロイメント](/rest/reference/repos#deployments)」を参照してください。
+誰かがデプロイメントを作成し、それによって `deployment` イベントがトリガーされるときにワークフローを実行します。 コミット SHA 付きで作成されたデプロイメントには Git ref がない場合があります。 REST API の詳細については、「[デプロイメント](/rest/reference/repos#deployments)」を参照してください。
 
 | webhook イベントのペイロード                                   | アクティビティタイプ | `GITHUB_SHA` | `GITHUB_REF`                 |
 | ---------------------------------------------------- | ---------- | ------------ | ---------------------------- |
